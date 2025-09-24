@@ -1,0 +1,201 @@
+body {
+  font-family: 'Calibri', 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #000;
+}
+
+.resume-container {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+.sidebar {
+  background: #0f4c75;
+  color: #fff;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: left;
+  padding: 25px 20px;
+}
+
+.photo {
+  width: 200px;      
+  height: 200px;     
+  object-fit: cover; 
+  margin: 0 auto 20px;
+  display: block;
+  border-radius: 0;  
+}
+
+.name {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.3;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.lastname {
+  margin-top: 4px;
+}
+
+
+
+.contact,
+.skills {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact h2,
+.skills h2 {
+  display: block;
+  width: 100%;
+  background: #0b3b5a;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contact p,
+.skills ul {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+  margin: 8px 0;
+  padding: 0 20px;
+}
+
+.skills ul {
+  list-style: disc;
+  padding-left: 40px;
+  margin: 8px 0;
+}
+
+.main-content {
+  width: 70%;
+  padding: 30px 25px;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0b3b5a;
+  margin: 20px 0 15px 0;
+  text-align: left;
+  padding: 8px 0;
+  border: none;
+  position: relative;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #ccc;
+}
+
+.section-title::before {
+  margin-bottom: 6px;
+}
+
+.section-title::after {
+  margin-top: 6px;
+}
+
+.profile p,
+.education p,
+.experience p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 10px 0;
+  color: #000;
+}
+
+.job-entry {
+  margin-bottom: 20px;
+}
+
+.job-year {
+  font-weight: bold;
+  color: #000;
+  font-size: 15px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.job-info {
+  display: inline-block;
+}
+
+.job-info h3 {
+  display: inline-block;
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+  margin-left: 6px;
+}
+
+.company {
+  display: block;
+  font-style: italic;
+  font-size: 14px;
+  color: #333;
+  margin: 2px 0 6px 0;
+}
+
+.job-info ul {
+  margin: 5px 0 0 20px;
+  padding: 0;
+  list-style: disc;
+  font-size: 14px;
+}
+
+@media (max-width: 720px) {
+  .resume-container {
+    flex-direction: column;
+    max-width: 420px;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .job-year {
+    text-align: left;
+    padding-right: 0;
+    width: auto;
+    margin-bottom: 6px;
+  }
+
+  .job-entry {
+    flex-direction: column;
+  }
+}
