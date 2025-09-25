@@ -151,7 +151,7 @@ export default function App() {
           psYears="2009 - 2011"
         />
         <Experience
-          exp1Year="2023"
+          exp1Year="2024"
           exp1Title="School Project - Web Development"
           exp1Detail1="Built a responsive website using HTML and CSS"
           exp1Detail2="Designed pages to showcase content for a mass communication course"
